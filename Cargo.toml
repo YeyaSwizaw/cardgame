@@ -11,11 +11,9 @@ path = "src/server.rs"
 name = "client"
 path = "src/client.rs"
 
-[workspace]
-members = [ "server", "lobby" ]
-
 [dependencies]
-server = { path = "server" }
+server = { path = "gameserver/server" }
+client = { path = "gameserver/client" }
 serde = "1.0"
 serde_json = "1.0"
 serde_derive = "1.0"

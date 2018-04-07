@@ -1,10 +1,10 @@
-use server::game::Game;
+use server::Game;
 
 pub struct TestGame;
 
 #[derive(Debug, Default, Clone, Serialize, Deserialize)]
 pub struct Player {
-    name: String
+    pub name: String
 }
 
 impl Player {
