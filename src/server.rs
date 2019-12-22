@@ -4,11 +4,11 @@ extern crate serde;
 extern crate server;
 
 use server::GameServer;
-use game::TestGame;
+use crate::game::TestGame;
 
 mod game;
 
 fn main() {
-    let server = GameServer::<TestGame>::spawn("127.0.0.1:8080").unwrap();
+    let _server = GameServer::<TestGame>::spawn("127.0.0.1:8080").unwrap();
     loop {}
 }

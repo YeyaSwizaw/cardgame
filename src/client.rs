@@ -15,7 +15,7 @@ use client::{
     GameClient,
 };
 
-use game::{TestGame, Player};
+use crate::game::{TestGame, Player};
 
 mod game;
 
